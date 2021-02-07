@@ -1,10 +1,29 @@
+
+
 * {
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+
+#search {
+    text-align: left;
+    height: 30px;
+    width: 30%;
+    background-color: rgb(226, 238, 243);
+    border-radius: 5px;
+
 }
 
 .gallery {
-    margin: auto;
+    margin: 10px auto;
     display: grid;
     max-width: 850px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

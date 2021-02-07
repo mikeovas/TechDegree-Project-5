@@ -11,14 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="My TechDegree Unit 5 Project">
   <title>My Interactive Photo Gallery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/baguetteBox.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-  <div class="gallery">
+  <div class="container">
+     <input type="text" id="search" name="search" placeholder="search " required>
+  </div>
 
+  <div class="gallery">
       <a href="photos/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
           <img src="photos/thumbnails/01.jpg" alt="Hay Bales">
       </a>
@@ -55,7 +60,6 @@
       <a href="photos/12.jpg" data-caption="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.">
           <img src="photos/thumbnails/12.jpg" alt="Bluebells">
       </a>
-
   </div>
 
 
