@@ -17,7 +17,7 @@
     text-align: left;
     height: 30px;
     width: 30%;
-    background-color: rgb(226, 238, 243);
+    background-color: rgb(232, 247, 253);
     border-radius: 5px;
 
 }
@@ -28,5 +28,5 @@
     max-width: 850px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: minmax(200px, auto);
-    gap: 10px;
+    gap: 15px;
 }
