@@ -4,10 +4,10 @@
 }
 
 .gallery {
-    margin: 0 auto;
-    max-width: 100%;
+    margin: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    max-width: 850px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
     gap: 10px;
 }
