@@ -26,7 +26,7 @@ for (i = 1; i <= 12; i++) {
   // Loop thru data captions and filter out what not needed
   const contained = captions.includes(str);
   console.log(contained);
-  console.log(str);
+  console.log(str);  // str is undefined...not getting an input in time for a comparison????
 
   if (contained) {
     console.log('input is found in the caption');
