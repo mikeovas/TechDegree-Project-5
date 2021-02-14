@@ -10,6 +10,7 @@ function searchInput() {
   const userInput = document.getElementById('search');
   const keyInput = userInput.value.toLowerCase();
   console.log(keyInput);
+  
 }
 
 const str = searchInput();
