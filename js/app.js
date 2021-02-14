@@ -11,13 +11,13 @@ function searchInput() {
   console.log(keyInput);
 }
 
+const str = searchInput();
 
 // Loop thru data captions for each picture
 // Store as a variable and log to the console.
 
 const prefix = 'photo';
 for (i = 1; i <= 12; i++) {
-  const str = searchInput();
 
   const dataCaptions = document.getElementById('photo' + i);
   const captions = dataCaptions.getAttribute("data-caption").toLowerCase();
@@ -26,6 +26,7 @@ for (i = 1; i <= 12; i++) {
   // Loop thru data captions and filter out what not needed
   const contained = captions.includes(str);
   console.log(contained);
+  console.log(str);
 
   if (contained) {
     console.log('input is found in the caption');
