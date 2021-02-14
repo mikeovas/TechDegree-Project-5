@@ -4,7 +4,6 @@ window.addEventListener('load', function () {
 
 
 
-
 // Find user text input, store as variable and log to console.
 function searchInput() {
   const userInput = document.getElementById('search');
