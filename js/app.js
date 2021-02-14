@@ -20,8 +20,11 @@ window.addEventListener('load', function() {
     const captions = dataCaptions.getAttribute("data-caption").toLowerCase();
     console.log(captions);
 
-    
+    // let images = document.getElementsByTagName('img');
 
+  
+    //     console.log(images);
+    //     console.log(dataCaption);
    
       
   }
