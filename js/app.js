@@ -1,6 +1,6 @@
  /* I am aiming for the grade of Exceeds Expectations and don't want anything less.
-     I have tested this in three browsers - Google Chrome, Microsoft Edge, and Mozilla Firefox. It worked fine.
-     I have check the JS with the JSHint validator and found no errors. --> */
+       I have tested this in three browsers - Google Chrome, Microsoft Edge, and Mozilla Firefox. It worked fine.
+       I have check the JS with the JSHint validator and found no errors. --> */
 
 
  //code to run the baguette lightbox
@@ -14,8 +14,6 @@
 
      const userInput = document.getElementById('search');
      const keyInput = userInput.value.toLowerCase();
-     console.log(keyInput);
-
 
      // Loop thru data captions for each picture
      for (i = 1; i <= 12; i++) {
@@ -23,11 +21,9 @@
          // Store as a variable and log to the console.    
          const dataCaptions = document.getElementById('photo' + i);
          const captions = dataCaptions.getAttribute("data-caption").toLowerCase();
-         console.log(captions);
 
          // Loop thru data captions and filter out what not needed
          const contained = captions.includes(keyInput);
-         console.log(contained);
 
          // display correct images
          if (!contained) {
