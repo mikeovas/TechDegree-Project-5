@@ -14,26 +14,27 @@ function searchInput() {
   console.log(keyInput);
 
  
-
+  // Loop thru data captions for each picture
   const prefix = 'photo';
   for (i = 1; i <= 12; i++) {
 
-    // Loop thru data captions for each picture and store as a variable and log to the console.    
+  // Store as a variable and log to the console.    
     const dataCaptions = document.getElementById('photo' + i);
     const captions = dataCaptions.getAttribute("data-caption").toLowerCase();
     console.log(captions);
 
-    // Loop thru data captions and filter out what not needed
+  // Loop thru data captions and filter out what not needed
     const contained = captions.includes(keyInput);
     console.log(contained);
     
     // display correct images
     const images = document.getElementsByTagName('img');
+    // console.log(images[i]);
 
-    if (contained) {
-      images[i].style.innerHTML.display = "none"; 
+    if (!contained) {
+      dataCaptions.style.display = "none"; 
     } else {
-      images[i].style.innerHTML.display = "block";  
+      dataCaptions.style.display = "block";  
     }
 
     
